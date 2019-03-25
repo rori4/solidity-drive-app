@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import SolidityDriveContract from "./contracts/SolidityDrive.json";
 import getWeb3 from "./utils/getWeb3";
-import { StyledDropZone } from 'react-drop-zone';
-import FileIcon, {defaultStyles} from 'react-file-icon';
+import { StyledDropZone } from "react-drop-zone";
+import FileIcon, { defaultStyles } from "react-file-icon";
 import "react-drop-zone/dist/styles.css";
 import "bootstrap/dist/css/bootstrap.css";
-import { Table } from 'reactstrap';
+import { Table } from "reactstrap";
 import "./App.css";
 
 class App extends Component {
@@ -24,16 +24,16 @@ class App extends Component {
       const deployedNetwork = SolidityDriveContract.networks[networkId];
       const instance = new web3.eth.Contract(
         SolidityDriveContract.abi,
-        deployedNetwork && deployedNetwork.address,
+        deployedNetwork && deployedNetwork.address
       );
 
       // Set web3, accounts, and contract to the state, and then proceed with an
       // example of interacting with the contract's methods.
-      this.setState({ web3, accounts, contract: instance }, this.runExample);
+      this.setState({ web3, accounts, contract: instance }, this.getFiles);
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(
-        `Failed to load web3, accounts, or contract. Check console for details.`,
+        `Failed to load web3, accounts, or contract. Check console for details.`
       );
       console.error(error);
     }
@@ -41,11 +41,21 @@ class App extends Component {
 
   getFiles = async () => {
     //TODO:
-  }
+    const { account, contract } = this.state;
+    let filesLength = await contract.methods
+      .getLength()
+      .call({ from: account[0] });
+    let files = [];
+    for (let i = 0; i < filesLength; i++) {
+      let file = await contract.method.getFile(i).call({ from: account[0] });
+      files.push(file);
+    }
+    this.setState({ solidityDrive: files });
+  };
 
-  onDrop= async () => {
+  onDrop = async () => {
     //TODO:
-  }
+  };
 
   render() {
     if (!this.state.web3) {
@@ -54,23 +64,31 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container pt-3">
-        <StyledDropZone />
-        <Table>
-          <thead>
-            <tr>
-              <th width="7%" scope="row">Type</th>
-              <th className="text-left">File Name</th>
-              <th className="text-right">Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th><FileIcon size={30} extension="docx" {...defaultStyles.docx}/></th>
-              <th className="text-left">File name.docx</th>
-              <th className="text-right">2019/3/25</th>
-            </tr>
-          </tbody>
-        </Table>
+          <StyledDropZone />
+          <Table>
+            <thead>
+              <tr>
+                <th width="7%" scope="row">
+                  Type
+                </th>
+                <th className="text-left">File Name</th>
+                <th className="text-right">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  <FileIcon
+                    size={30}
+                    extension="docx"
+                    {...defaultStyles.docx}
+                  />
+                </th>
+                <th className="text-left">File name.docx</th>
+                <th className="text-right">2019/3/25</th>
+              </tr>
+            </tbody>
+          </Table>
         </div>
       </div>
     );
