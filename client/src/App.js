@@ -6,7 +6,7 @@ import FileIcon, { defaultStyles } from "react-file-icon";
 import "react-drop-zone/dist/styles.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Table } from "reactstrap";
-import fileReaderPullStream from 'pull-fil-reader';
+import fileReaderPullStream from 'pull-file-reader';
 import ipfs from './utils/ipfs';
 import "./App.css";
 
@@ -55,7 +55,7 @@ class App extends Component {
       }
       this.setState({ solidityDrive: files });
     } catch (error) {
-      console.log(error);
+     
     }
   };
 
