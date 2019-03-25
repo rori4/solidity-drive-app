@@ -41,16 +41,20 @@ class App extends Component {
 
   getFiles = async () => {
     //TODO:
-    const { account, contract } = this.state;
-    let filesLength = await contract.methods
-      .getLength()
-      .call({ from: account[0] });
-    let files = [];
-    for (let i = 0; i < filesLength; i++) {
-      let file = await contract.method.getFile(i).call({ from: account[0] });
-      files.push(file);
+    try {
+      const { account, contract } = this.state;
+      let filesLength = await contract.methods
+        .getLength()
+        .call({ from: account[0] });
+      let files = [];
+      for (let i = 0; i < filesLength; i++) {
+        let file = await contract.method.getFile(i).call({ from: account[0] });
+        files.push(file);
+      }
+      this.setState({ solidityDrive: files });
+    } catch (error) {
+      console.log(error);
     }
-    this.setState({ solidityDrive: files });
   };
 
   onDrop = async () => {
