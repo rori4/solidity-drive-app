@@ -1,0 +1,2309 @@
+{
+  "contractName": "SolidityDrive",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_hash",
+          "type": "string"
+        },
+        {
+          "name": "_fileName",
+          "type": "string"
+        },
+        {
+          "name": "_fileType",
+          "type": "string"
+        },
+        {
+          "name": "_date",
+          "type": "uint256"
+        }
+      ],
+      "name": "add",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x3f647a97"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getFile",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x2bfda313"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getLength",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xbe1c766b"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506108e5806100206000396000f3fe608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632bfda3131461005c5780633f647a97146101ef578063be1c766b146103ef575b600080fd5b34801561006857600080fd5b506100956004803603602081101561007f57600080fd5b810190808035906020019092919050505061041a565b60405180806020018060200180602001858152602001848103845288818151815260200191508051906020019080838360005b838110156100e35780820151818401526020810190506100c8565b50505050905090810190601f1680156101105780820380516001836020036101000a031916815260200191505b50848103835287818151815260200191508051906020019080838360005b8381101561014957808201518184015260208101905061012e565b50505050905090810190601f1680156101765780820380516001836020036101000a031916815260200191505b50848103825286818151815260200191508051906020019080838360005b838110156101af578082015181840152602081019050610194565b50505050905090810190601f1680156101dc5780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b3480156101fb57600080fd5b506103ed6004803603608081101561021257600080fd5b810190808035906020019064010000000081111561022f57600080fd5b82018360208201111561024157600080fd5b8035906020019184600183028401116401000000008311171561026357600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803590602001906401000000008111156102c657600080fd5b8201836020820111156102d857600080fd5b803590602001918460018302840111640100000000831117156102fa57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192908035906020019064010000000081111561035d57600080fd5b82018360208201111561036f57600080fd5b8035906020019184600183028401116401000000008311171561039157600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803590602001909291905050506106ad565b005b3480156103fb57600080fd5b506104046107a2565b6040518082815260200191505060405180910390f35b606080606060006104296107eb565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208681548110151561047457fe5b906000526020600020906004020160806040519081016040529081600082018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105275780601f106104fc57610100808354040283529160200191610527565b820191906000526020600020905b81548152906001019060200180831161050a57829003601f168201915b50505050508152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105c95780601f1061059e576101008083540402835291602001916105c9565b820191906000526020600020905b8154815290600101906020018083116105ac57829003601f168201915b50505050508152602001600282018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561066b5780601f106106405761010080835404028352916020019161066b565b820191906000526020600020905b81548152906001019060200180831161064e57829003601f168201915b50505050508152602001600382015481525050905080600001518160200151826040015183606001518393508292508191509450945094509450509193509193565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060806040519081016040528086815260200185815260200184815260200183815250908060018154018082558091505090600182039060005260206000209060040201600090919290919091506000820151816000019080519060200190610754929190610814565b506020820151816001019080519060200190610771929190610814565b50604082015181600201908051906020019061078e929190610814565b506060820151816003015550505050505050565b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002080549050905090565b608060405190810160405280606081526020016060815260200160608152602001600081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061085557805160ff1916838001178555610883565b82800160010185558215610883579182015b82811115610882578251825591602001919060010190610867565b5b5090506108909190610894565b5090565b6108b691905b808211156108b257600081600090555060010161089a565b5090565b9056fea165627a7a72305820c6fc6d2b55849f8aca9622a29346d6c12c4be594fb72edeceab3751acf23ae1e0029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632bfda3131461005c5780633f647a97146101ef578063be1c766b146103ef575b600080fd5b34801561006857600080fd5b506100956004803603602081101561007f57600080fd5b810190808035906020019092919050505061041a565b60405180806020018060200180602001858152602001848103845288818151815260200191508051906020019080838360005b838110156100e35780820151818401526020810190506100c8565b50505050905090810190601f1680156101105780820380516001836020036101000a031916815260200191505b50848103835287818151815260200191508051906020019080838360005b8381101561014957808201518184015260208101905061012e565b50505050905090810190601f1680156101765780820380516001836020036101000a031916815260200191505b50848103825286818151815260200191508051906020019080838360005b838110156101af578082015181840152602081019050610194565b50505050905090810190601f1680156101dc5780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b3480156101fb57600080fd5b506103ed6004803603608081101561021257600080fd5b810190808035906020019064010000000081111561022f57600080fd5b82018360208201111561024157600080fd5b8035906020019184600183028401116401000000008311171561026357600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803590602001906401000000008111156102c657600080fd5b8201836020820111156102d857600080fd5b803590602001918460018302840111640100000000831117156102fa57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192908035906020019064010000000081111561035d57600080fd5b82018360208201111561036f57600080fd5b8035906020019184600183028401116401000000008311171561039157600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803590602001909291905050506106ad565b005b3480156103fb57600080fd5b506104046107a2565b6040518082815260200191505060405180910390f35b606080606060006104296107eb565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208681548110151561047457fe5b906000526020600020906004020160806040519081016040529081600082018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105275780601f106104fc57610100808354040283529160200191610527565b820191906000526020600020905b81548152906001019060200180831161050a57829003601f168201915b50505050508152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105c95780601f1061059e576101008083540402835291602001916105c9565b820191906000526020600020905b8154815290600101906020018083116105ac57829003601f168201915b50505050508152602001600282018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561066b5780601f106106405761010080835404028352916020019161066b565b820191906000526020600020905b81548152906001019060200180831161064e57829003601f168201915b50505050508152602001600382015481525050905080600001518160200151826040015183606001518393508292508191509450945094509450509193509193565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060806040519081016040528086815260200185815260200184815260200183815250908060018154018082558091505090600182039060005260206000209060040201600090919290919091506000820151816000019080519060200190610754929190610814565b506020820151816001019080519060200190610771929190610814565b50604082015181600201908051906020019061078e929190610814565b506060820151816003015550505050505050565b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002080549050905090565b608060405190810160405280606081526020016060815260200160608152602001600081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061085557805160ff1916838001178555610883565b82800160010185558215610883579182015b82811115610882578251825591602001919060010190610867565b5b5090506108909190610894565b5090565b6108b691905b808211156108b257600081600090555060010161089a565b5090565b9056fea165627a7a72305820c6fc6d2b55849f8aca9622a29346d6c12c4be594fb72edeceab3751acf23ae1e0029",
+  "sourceMap": "27:763:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:763:1;;;;;;;",
+  "deployedSourceMap": "27:763:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;448:234;;8:9:-1;5:2;;;30:1;27;20:12;5:2;448:234:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;448:234:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;448:234:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;448:234:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;448:234:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;220:220;;8:9:-1;5:2;;;30:1;27;20:12;5:2;220:220:1;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;220:220:1;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;220:220:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;220:220:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;220:220:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;220:220:1;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;220:220:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;220:220:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;220:220:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;220:220:1;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;220:220:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;220:220:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;220:220:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;220:220:1;;;;;;;;;;;;;;;;;;;;;;;;;;;690:97;;8:9:-1;5:2;;;30:1;27;20:12;5:2;690:97:1;;;;;;;;;;;;;;;;;;;;;;;448:234;498:13;513;528;543:4;560:16;;:::i;:::-;579:5;:17;585:10;579:17;;;;;;;;;;;;;;;597:6;579:25;;;;;;;;;;;;;;;;;;;;560:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;623:4;:9;;;634:4;:13;;;649:4;:13;;;664:4;:9;;;615:59;;;;;;;;;;;;;;;;;;448:234;;;;;:::o;220:220::-;334:5;:17;340:10;334:17;;;;;;;;;;;;;;;357:74;;;;;;;;;369:5;357:74;;;;386:9;357:74;;;;407:9;357:74;;;;424:5;357:74;;;334:98;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;334:98:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;220:220;;;;:::o;690:97::-;731:4;755:5;:17;761:10;755:17;;;;;;;;;;;;;;;:24;;;;748:31;;690:97;:::o;27:763::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract SolidityDrive {\r\n    struct File {\r\n        string hash;\r\n        string fileName;\r\n        string fileType;\r\n        uint date;\r\n    }\r\n\r\n    mapping(address => File[]) files;\r\n\r\n    function add(string memory _hash, string memory _fileName, string memory _fileType, uint _date) public {\r\n        files[msg.sender].push(File({hash: _hash, fileName: _fileName, fileType: _fileType, date: _date}));\r\n    }\r\n\r\n    function getFile(uint _index) public view returns(string memory, string memory, string memory, uint) {\r\n        File memory file = files[msg.sender][_index];\r\n        return (file.hash, file.fileName, file.fileType, file.date);\r\n    }\r\n\r\n    function getLength() public view returns(uint) {\r\n        return files[msg.sender].length;\r\n    }\r\n}",
+  "sourcePath": "F:/solidity-drive-app/contracts/SolidityDrive.sol",
+  "ast": {
+    "absolutePath": "/F/solidity-drive-app/contracts/SolidityDrive.sol",
+    "exportedSymbols": {
+      "SolidityDrive": [
+        143
+      ]
+    },
+    "id": 144,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 143,
+        "linearizedBaseContracts": [
+          143
+        ],
+        "name": "SolidityDrive",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "SolidityDrive.File",
+            "id": 67,
+            "members": [
+              {
+                "constant": false,
+                "id": 60,
+                "name": "hash",
+                "nodeType": "VariableDeclaration",
+                "scope": 67,
+                "src": "80:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 59,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "80:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 62,
+                "name": "fileName",
+                "nodeType": "VariableDeclaration",
+                "scope": 67,
+                "src": "102:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 61,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "102:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 64,
+                "name": "fileType",
+                "nodeType": "VariableDeclaration",
+                "scope": 67,
+                "src": "128:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 63,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "128:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 66,
+                "name": "date",
+                "nodeType": "VariableDeclaration",
+                "scope": 67,
+                "src": "154:9:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 65,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "154:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "File",
+            "nodeType": "StructDefinition",
+            "scope": 143,
+            "src": "57:114:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 72,
+            "name": "files",
+            "nodeType": "VariableDeclaration",
+            "scope": 143,
+            "src": "179:32:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_File_$67_storage_$dyn_storage_$",
+              "typeString": "mapping(address => struct SolidityDrive.File[])"
+            },
+            "typeName": {
+              "id": 71,
+              "keyType": {
+                "id": 68,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "187:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "179:26:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_File_$67_storage_$dyn_storage_$",
+                "typeString": "mapping(address => struct SolidityDrive.File[])"
+              },
+              "valueType": {
+                "baseType": {
+                  "contractScope": null,
+                  "id": 69,
+                  "name": "File",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 67,
+                  "src": "198:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_File_$67_storage_ptr",
+                    "typeString": "struct SolidityDrive.File"
+                  }
+                },
+                "id": 70,
+                "length": null,
+                "nodeType": "ArrayTypeName",
+                "src": "198:6:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_File_$67_storage_$dyn_storage_ptr",
+                  "typeString": "struct SolidityDrive.File[]"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 96,
+              "nodeType": "Block",
+              "src": "323:117:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 89,
+                            "name": "_hash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 74,
+                            "src": "369:5:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 90,
+                            "name": "_fileName",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 76,
+                            "src": "386:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 91,
+                            "name": "_fileType",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 78,
+                            "src": "407:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 92,
+                            "name": "_date",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 80,
+                            "src": "424:5:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 88,
+                          "name": "File",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 67,
+                          "src": "357:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_File_$67_storage_ptr_$",
+                            "typeString": "type(struct SolidityDrive.File storage pointer)"
+                          }
+                        },
+                        "id": 93,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [
+                          "hash",
+                          "fileName",
+                          "fileType",
+                          "date"
+                        ],
+                        "nodeType": "FunctionCall",
+                        "src": "357:74:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_File_$67_memory",
+                          "typeString": "struct SolidityDrive.File memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_File_$67_memory",
+                          "typeString": "struct SolidityDrive.File memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 83,
+                          "name": "files",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 72,
+                          "src": "334:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_File_$67_storage_$dyn_storage_$",
+                            "typeString": "mapping(address => struct SolidityDrive.File storage ref[] storage ref)"
+                          }
+                        },
+                        "id": 86,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 84,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 158,
+                            "src": "340:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 85,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "340:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "334:17:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_File_$67_storage_$dyn_storage",
+                          "typeString": "struct SolidityDrive.File storage ref[] storage ref"
+                        }
+                      },
+                      "id": 87,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "334:22:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_File_$67_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct SolidityDrive.File storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 94,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "334:98:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 95,
+                  "nodeType": "ExpressionStatement",
+                  "src": "334:98:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 97,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "add",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 81,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 74,
+                  "name": "_hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 97,
+                  "src": "233:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 73,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "233:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 76,
+                  "name": "_fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 97,
+                  "src": "254:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 75,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "254:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 78,
+                  "name": "_fileType",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 97,
+                  "src": "279:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 77,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "279:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 80,
+                  "name": "_date",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 97,
+                  "src": "304:10:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 79,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "304:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "232:83:1"
+            },
+            "returnParameters": {
+              "id": 82,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "323:0:1"
+            },
+            "scope": 143,
+            "src": "220:220:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 129,
+              "nodeType": "Block",
+              "src": "549:133:1",
+              "statements": [
+                {
+                  "assignments": [
+                    111
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 111,
+                      "name": "file",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 129,
+                      "src": "560:16:1",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_File_$67_memory_ptr",
+                        "typeString": "struct SolidityDrive.File"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 110,
+                        "name": "File",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 67,
+                        "src": "560:4:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_File_$67_storage_ptr",
+                          "typeString": "struct SolidityDrive.File"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 118,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 112,
+                        "name": "files",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 72,
+                        "src": "579:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_File_$67_storage_$dyn_storage_$",
+                          "typeString": "mapping(address => struct SolidityDrive.File storage ref[] storage ref)"
+                        }
+                      },
+                      "id": 115,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 113,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 158,
+                          "src": "585:3:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 114,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "585:10:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "579:17:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_File_$67_storage_$dyn_storage",
+                        "typeString": "struct SolidityDrive.File storage ref[] storage ref"
+                      }
+                    },
+                    "id": 117,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 116,
+                      "name": "_index",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 99,
+                      "src": "597:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "579:25:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_File_$67_storage",
+                      "typeString": "struct SolidityDrive.File storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "560:44:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 119,
+                          "name": "file",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 111,
+                          "src": "623:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_File_$67_memory_ptr",
+                            "typeString": "struct SolidityDrive.File memory"
+                          }
+                        },
+                        "id": 120,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "hash",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 60,
+                        "src": "623:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 121,
+                          "name": "file",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 111,
+                          "src": "634:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_File_$67_memory_ptr",
+                            "typeString": "struct SolidityDrive.File memory"
+                          }
+                        },
+                        "id": 122,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "fileName",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 62,
+                        "src": "634:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 123,
+                          "name": "file",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 111,
+                          "src": "649:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_File_$67_memory_ptr",
+                            "typeString": "struct SolidityDrive.File memory"
+                          }
+                        },
+                        "id": 124,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "fileType",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 64,
+                        "src": "649:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 125,
+                          "name": "file",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 111,
+                          "src": "664:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_File_$67_memory_ptr",
+                            "typeString": "struct SolidityDrive.File memory"
+                          }
+                        },
+                        "id": 126,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "date",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 66,
+                        "src": "664:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "id": 127,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "622:52:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_string_memory_$_t_string_memory_$_t_string_memory_$_t_uint256_$",
+                      "typeString": "tuple(string memory,string memory,string memory,uint256)"
+                    }
+                  },
+                  "functionReturnParameters": 109,
+                  "id": 128,
+                  "nodeType": "Return",
+                  "src": "615:59:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 130,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getFile",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 100,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 99,
+                  "name": "_index",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 130,
+                  "src": "465:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 98,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "465:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "464:13:1"
+            },
+            "returnParameters": {
+              "id": 109,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 102,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 130,
+                  "src": "498:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 101,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "498:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 104,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 130,
+                  "src": "513:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 103,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "513:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 106,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 130,
+                  "src": "528:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 105,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "528:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 108,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 130,
+                  "src": "543:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 107,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "543:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "497:51:1"
+            },
+            "scope": 143,
+            "src": "448:234:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 141,
+              "nodeType": "Block",
+              "src": "737:50:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 135,
+                        "name": "files",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 72,
+                        "src": "755:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_File_$67_storage_$dyn_storage_$",
+                          "typeString": "mapping(address => struct SolidityDrive.File storage ref[] storage ref)"
+                        }
+                      },
+                      "id": 138,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 136,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 158,
+                          "src": "761:3:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 137,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "761:10:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "755:17:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_File_$67_storage_$dyn_storage",
+                        "typeString": "struct SolidityDrive.File storage ref[] storage ref"
+                      }
+                    },
+                    "id": 139,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "length",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "755:24:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 134,
+                  "id": 140,
+                  "nodeType": "Return",
+                  "src": "748:31:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 142,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLength",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 131,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "708:2:1"
+            },
+            "returnParameters": {
+              "id": 134,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 133,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 142,
+                  "src": "731:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 132,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "731:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "730:6:1"
+            },
+            "scope": 143,
+            "src": "690:97:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 144,
+        "src": "27:763:1"
+      }
+    ],
+    "src": "0:790:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/F/solidity-drive-app/contracts/SolidityDrive.sol",
+    "exportedSymbols": {
+      "SolidityDrive": [
+        143
+      ]
+    },
+    "id": 144,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 143,
+        "linearizedBaseContracts": [
+          143
+        ],
+        "name": "SolidityDrive",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "SolidityDrive.File",
+            "id": 67,
+            "members": [
+              {
+                "constant": false,
+                "id": 60,
+                "name": "hash",
+                "nodeType": "VariableDeclaration",
+                "scope": 67,
+                "src": "80:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 59,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "80:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 62,
+                "name": "fileName",
+                "nodeType": "VariableDeclaration",
+                "scope": 67,
+                "src": "102:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 61,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "102:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 64,
+                "name": "fileType",
+                "nodeType": "VariableDeclaration",
+                "scope": 67,
+                "src": "128:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 63,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "128:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 66,
+                "name": "date",
+                "nodeType": "VariableDeclaration",
+                "scope": 67,
+                "src": "154:9:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 65,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "154:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "File",
+            "nodeType": "StructDefinition",
+            "scope": 143,
+            "src": "57:114:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 72,
+            "name": "files",
+            "nodeType": "VariableDeclaration",
+            "scope": 143,
+            "src": "179:32:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_File_$67_storage_$dyn_storage_$",
+              "typeString": "mapping(address => struct SolidityDrive.File[])"
+            },
+            "typeName": {
+              "id": 71,
+              "keyType": {
+                "id": 68,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "187:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "179:26:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_File_$67_storage_$dyn_storage_$",
+                "typeString": "mapping(address => struct SolidityDrive.File[])"
+              },
+              "valueType": {
+                "baseType": {
+                  "contractScope": null,
+                  "id": 69,
+                  "name": "File",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 67,
+                  "src": "198:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_File_$67_storage_ptr",
+                    "typeString": "struct SolidityDrive.File"
+                  }
+                },
+                "id": 70,
+                "length": null,
+                "nodeType": "ArrayTypeName",
+                "src": "198:6:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_File_$67_storage_$dyn_storage_ptr",
+                  "typeString": "struct SolidityDrive.File[]"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 96,
+              "nodeType": "Block",
+              "src": "323:117:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 89,
+                            "name": "_hash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 74,
+                            "src": "369:5:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 90,
+                            "name": "_fileName",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 76,
+                            "src": "386:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 91,
+                            "name": "_fileType",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 78,
+                            "src": "407:9:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 92,
+                            "name": "_date",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 80,
+                            "src": "424:5:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 88,
+                          "name": "File",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 67,
+                          "src": "357:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_File_$67_storage_ptr_$",
+                            "typeString": "type(struct SolidityDrive.File storage pointer)"
+                          }
+                        },
+                        "id": 93,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [
+                          "hash",
+                          "fileName",
+                          "fileType",
+                          "date"
+                        ],
+                        "nodeType": "FunctionCall",
+                        "src": "357:74:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_File_$67_memory",
+                          "typeString": "struct SolidityDrive.File memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_File_$67_memory",
+                          "typeString": "struct SolidityDrive.File memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 83,
+                          "name": "files",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 72,
+                          "src": "334:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_File_$67_storage_$dyn_storage_$",
+                            "typeString": "mapping(address => struct SolidityDrive.File storage ref[] storage ref)"
+                          }
+                        },
+                        "id": 86,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 84,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 158,
+                            "src": "340:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 85,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "340:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "334:17:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_File_$67_storage_$dyn_storage",
+                          "typeString": "struct SolidityDrive.File storage ref[] storage ref"
+                        }
+                      },
+                      "id": 87,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "334:22:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_File_$67_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct SolidityDrive.File storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 94,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "334:98:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 95,
+                  "nodeType": "ExpressionStatement",
+                  "src": "334:98:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 97,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "add",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 81,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 74,
+                  "name": "_hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 97,
+                  "src": "233:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 73,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "233:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 76,
+                  "name": "_fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 97,
+                  "src": "254:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 75,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "254:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 78,
+                  "name": "_fileType",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 97,
+                  "src": "279:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 77,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "279:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 80,
+                  "name": "_date",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 97,
+                  "src": "304:10:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 79,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "304:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "232:83:1"
+            },
+            "returnParameters": {
+              "id": 82,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "323:0:1"
+            },
+            "scope": 143,
+            "src": "220:220:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 129,
+              "nodeType": "Block",
+              "src": "549:133:1",
+              "statements": [
+                {
+                  "assignments": [
+                    111
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 111,
+                      "name": "file",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 129,
+                      "src": "560:16:1",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_File_$67_memory_ptr",
+                        "typeString": "struct SolidityDrive.File"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 110,
+                        "name": "File",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 67,
+                        "src": "560:4:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_File_$67_storage_ptr",
+                          "typeString": "struct SolidityDrive.File"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 118,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 112,
+                        "name": "files",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 72,
+                        "src": "579:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_File_$67_storage_$dyn_storage_$",
+                          "typeString": "mapping(address => struct SolidityDrive.File storage ref[] storage ref)"
+                        }
+                      },
+                      "id": 115,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 113,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 158,
+                          "src": "585:3:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 114,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "585:10:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "579:17:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_File_$67_storage_$dyn_storage",
+                        "typeString": "struct SolidityDrive.File storage ref[] storage ref"
+                      }
+                    },
+                    "id": 117,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 116,
+                      "name": "_index",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 99,
+                      "src": "597:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "579:25:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_File_$67_storage",
+                      "typeString": "struct SolidityDrive.File storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "560:44:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 119,
+                          "name": "file",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 111,
+                          "src": "623:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_File_$67_memory_ptr",
+                            "typeString": "struct SolidityDrive.File memory"
+                          }
+                        },
+                        "id": 120,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "hash",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 60,
+                        "src": "623:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 121,
+                          "name": "file",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 111,
+                          "src": "634:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_File_$67_memory_ptr",
+                            "typeString": "struct SolidityDrive.File memory"
+                          }
+                        },
+                        "id": 122,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "fileName",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 62,
+                        "src": "634:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 123,
+                          "name": "file",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 111,
+                          "src": "649:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_File_$67_memory_ptr",
+                            "typeString": "struct SolidityDrive.File memory"
+                          }
+                        },
+                        "id": 124,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "fileType",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 64,
+                        "src": "649:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 125,
+                          "name": "file",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 111,
+                          "src": "664:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_File_$67_memory_ptr",
+                            "typeString": "struct SolidityDrive.File memory"
+                          }
+                        },
+                        "id": 126,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "date",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 66,
+                        "src": "664:9:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "id": 127,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "622:52:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_string_memory_$_t_string_memory_$_t_string_memory_$_t_uint256_$",
+                      "typeString": "tuple(string memory,string memory,string memory,uint256)"
+                    }
+                  },
+                  "functionReturnParameters": 109,
+                  "id": 128,
+                  "nodeType": "Return",
+                  "src": "615:59:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 130,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getFile",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 100,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 99,
+                  "name": "_index",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 130,
+                  "src": "465:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 98,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "465:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "464:13:1"
+            },
+            "returnParameters": {
+              "id": 109,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 102,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 130,
+                  "src": "498:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 101,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "498:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 104,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 130,
+                  "src": "513:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 103,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "513:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 106,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 130,
+                  "src": "528:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 105,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "528:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 108,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 130,
+                  "src": "543:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 107,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "543:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "497:51:1"
+            },
+            "scope": 143,
+            "src": "448:234:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 141,
+              "nodeType": "Block",
+              "src": "737:50:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 135,
+                        "name": "files",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 72,
+                        "src": "755:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_File_$67_storage_$dyn_storage_$",
+                          "typeString": "mapping(address => struct SolidityDrive.File storage ref[] storage ref)"
+                        }
+                      },
+                      "id": 138,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 136,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 158,
+                          "src": "761:3:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 137,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "761:10:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "755:17:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_File_$67_storage_$dyn_storage",
+                        "typeString": "struct SolidityDrive.File storage ref[] storage ref"
+                      }
+                    },
+                    "id": 139,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "length",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "755:24:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 134,
+                  "id": 140,
+                  "nodeType": "Return",
+                  "src": "748:31:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 142,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLength",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 131,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "708:2:1"
+            },
+            "returnParameters": {
+              "id": 134,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 133,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 142,
+                  "src": "731:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 132,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "731:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "730:6:1"
+            },
+            "scope": 143,
+            "src": "690:97:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 144,
+        "src": "27:763:1"
+      }
+    ],
+    "src": "0:790:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x5c8ad56056f269133EFFD8db5934540b5EdD9499",
+      "transactionHash": "0x2926ead8bae54ba2867eed733722cae1547322237cad7242c714debbb590a492"
+    }
+  },
+  "schemaVersion": "3.0.3",
+  "updatedAt": "2019-03-25T15:09:31.830Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
