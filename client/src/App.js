@@ -6,6 +6,8 @@ import FileIcon, { defaultStyles } from "react-file-icon";
 import "react-drop-zone/dist/styles.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Table } from "reactstrap";
+import fileReaderPullStream from 'pull-fil-reader';
+import ipfs from './utils/ipfs';
 import "./App.css";
 
 class App extends Component {
@@ -57,8 +59,15 @@ class App extends Component {
     }
   };
 
-  onDrop = async () => {
-    //TODO:
+  onDrop = async (file) => {
+    try {
+      const {contract, accounts} = this.state;
+      const stream = fileReaderPullStream(file);
+      const result = await ipfs.add(stream);
+
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   render() {
@@ -68,7 +77,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container pt-3">
-          <StyledDropZone />
+          <StyledDropZone onDrop={this.onDrop} />
           <Table>
             <thead>
               <tr>
