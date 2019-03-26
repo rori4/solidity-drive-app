@@ -64,7 +64,11 @@ class App extends Component {
       const {contract, accounts} = this.state;
       const stream = fileReaderPullStream(file);
       const result = await ipfs.add(stream);
-
+      const timestamp = Math.round(+new Date() / 1000);
+      const type = file.name.substr(file.name.lastIndexOf(".")+1);
+      let uploaded = await contract.methods.add(result[0].hash, file.name, type, timestamp).send({from: accounts[0], gas: 300000})
+      console.log(uploaded);
+      this.getFiles();
     } catch (error) {
       console.log(error);
     }
