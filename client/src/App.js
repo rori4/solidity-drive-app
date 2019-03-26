@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Table } from "reactstrap";
 import fileReaderPullStream from 'pull-file-reader';
 import ipfs from './utils/ipfs';
+import Moment from "react-moment";
 import "./App.css";
 
 class App extends Component {
@@ -42,20 +43,19 @@ class App extends Component {
   };
 
   getFiles = async () => {
-    //TODO:
     try {
-      const { account, contract } = this.state;
+      const { accounts, contract } = this.state;
       let filesLength = await contract.methods
         .getLength()
-        .call({ from: account[0] });
+        .call({ from: accounts[0] });
       let files = [];
       for (let i = 0; i < filesLength; i++) {
-        let file = await contract.method.getFile(i).call({ from: account[0] });
+        let file = await contract.methods.getFile(i).call({ from: accounts[0] });
         files.push(file);
       }
       this.setState({ solidityDrive: files });
     } catch (error) {
-     
+     console.log(error);
     }
   };
 
@@ -75,6 +75,7 @@ class App extends Component {
   };
 
   render() {
+    const {solidityDrive} = this.state;
     if (!this.state.web3) {
       return <div>Loading Web3, accounts, and contract...</div>;
     }
@@ -93,17 +94,21 @@ class App extends Component {
               </tr>
             </thead>
             <tbody>
-              <tr>
+              {solidityDrive !== [] ? solidityDrive.map((item, key)=>(
+                <tr>
                 <th>
                   <FileIcon
                     size={30}
-                    extension="docx"
-                    {...defaultStyles.docx}
+                    extension={item[2]}
+                    {...defaultStyles[item[2]]}
                   />
                 </th>
-                <th className="text-left">File name.docx</th>
-                <th className="text-right">2019/3/25</th>
+                <th className="text-left"><a href={"https://ipfs.io/ipfs/"+item[0]}>{item[1]}</a></th>
+                <th className="text-right">
+                  <Moment format="YYYY/MM/DD" unix>{item[3]}</Moment>
+                </th>
               </tr>
+              )) : null}
             </tbody>
           </Table>
         </div>
